@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="yge-vh-qvK" customClass="FeaturedTypeCell" customModule="Entrepreneur_Challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jzW-Xb-eFD">
+                        <rect key="frame" x="10" y="10" width="130" height="130"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYR-ui-pYd">
+                        <rect key="frame" x="10" y="148" width="127" height="19"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="4Lo-Wp-255"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.66274509800000003" green="0.90196078430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jzW-Xb-eFD" secondAttribute="trailing" constant="5" id="ALD-4S-aiN"/>
+                <constraint firstItem="UYR-ui-pYd" firstAttribute="top" secondItem="jzW-Xb-eFD" secondAttribute="bottom" constant="8" symbolic="YES" id="EKf-z6-e2s"/>
+                <constraint firstItem="UYR-ui-pYd" firstAttribute="trailing" secondItem="yge-vh-qvK" secondAttribute="trailingMargin" id="HSK-M2-rdb"/>
+                <constraint firstItem="UYR-ui-pYd" firstAttribute="bottom" secondItem="yge-vh-qvK" secondAttribute="bottomMargin" id="YXj-LY-8vB"/>
+                <constraint firstItem="jzW-Xb-eFD" firstAttribute="top" secondItem="yge-vh-qvK" secondAttribute="top" constant="10" id="bCm-I2-ElO"/>
+                <constraint firstItem="jzW-Xb-eFD" firstAttribute="leading" secondItem="yge-vh-qvK" secondAttribute="leading" constant="10" id="m3T-v0-gzp"/>
+                <constraint firstItem="jzW-Xb-eFD" firstAttribute="leading" secondItem="UYR-ui-pYd" secondAttribute="leading" id="x3e-KR-lTS"/>
+            </constraints>
+            <size key="customSize" width="145" height="175"/>
+            <connections>
+                <outlet property="featureImageView" destination="jzW-Xb-eFD" id="uJT-ZW-Chg"/>
+                <outlet property="featureLabel" destination="UYR-ui-pYd" id="vYa-Ed-ofs"/>
+            </connections>
+            <point key="canvasLocation" x="-117.5" y="-35.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

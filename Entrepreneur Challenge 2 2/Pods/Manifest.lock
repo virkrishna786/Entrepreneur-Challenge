@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - FloatRatingView (2.0)
+  - Kingfisher (3.5.2)
+  - PieCharts (0.0.5)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireImage (~> 3.2)
+  - FloatRatingView (~> 2.0)
+  - Kingfisher (~> 3.5)
+  - PieCharts
+  - SwiftyJSON (~> 3.1)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  FloatRatingView: 857ab8f10040d06a42fc979f486c8f9fecd2f2e5
+  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
+  PieCharts: a0fb4784a3460088c8ba7dfb00b89784ddaa7e70
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: cd48dfa786d520908d43a794054e0b214fa7c0b7
+
+COCOAPODS: 1.1.1

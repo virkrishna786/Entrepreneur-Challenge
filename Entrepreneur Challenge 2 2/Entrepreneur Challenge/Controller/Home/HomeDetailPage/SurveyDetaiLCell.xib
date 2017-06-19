@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventDetail" rowHeight="368" id="Blc-7H-2qG" customClass="SurveyDetailCellTypeCell" customModule="Entrepreneur_Challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="368"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Blc-7H-2qG" id="KYP-uX-dBd">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="367"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQo-dE-wlw">
+                        <rect key="frame" x="8" y="7" width="314" height="335"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mA7-iB-EwW">
+                                <rect key="frame" x="6" y="42" width="301" height="173"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To complete the survey questions for you nominated enterprise hit the start button below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plI-Pp-xxB">
+                                <rect key="frame" x="8" y="254" width="298" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9P7-0R-MCV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.12549019610000001" green="0.1058823529" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmE-l2-66f">
+                                <rect key="frame" x="22" y="297" width="277" height="33"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.10980392160000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="START SURVEY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66274509800000003" green="0.90196078430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cmE-l2-66f" firstAttribute="top" secondItem="plI-Pp-xxB" secondAttribute="bottom" constant="8" symbolic="YES" id="0Q7-36-7aY"/>
+                            <constraint firstItem="mA7-iB-EwW" firstAttribute="leading" secondItem="sQo-dE-wlw" secondAttribute="leading" constant="6" id="FNA-uy-KIq"/>
+                            <constraint firstAttribute="bottom" secondItem="cmE-l2-66f" secondAttribute="bottom" constant="5" id="NXk-1c-8kO"/>
+                            <constraint firstItem="plI-Pp-xxB" firstAttribute="trailing" secondItem="sQo-dE-wlw" secondAttribute="trailingMargin" id="Uxt-I8-sVg"/>
+                            <constraint firstItem="mA7-iB-EwW" firstAttribute="centerX" secondItem="plI-Pp-xxB" secondAttribute="centerX" id="WP3-KN-IEP"/>
+                            <constraint firstAttribute="trailing" secondItem="cmE-l2-66f" secondAttribute="trailing" constant="15" id="c2N-1Z-jPH"/>
+                            <constraint firstItem="plI-Pp-xxB" firstAttribute="leading" secondItem="sQo-dE-wlw" secondAttribute="leadingMargin" id="kG5-Ce-fH5"/>
+                            <constraint firstItem="plI-Pp-xxB" firstAttribute="top" secondItem="mA7-iB-EwW" secondAttribute="bottom" constant="39" id="oi1-xe-TE8"/>
+                            <constraint firstItem="cmE-l2-66f" firstAttribute="leading" secondItem="sQo-dE-wlw" secondAttribute="leading" constant="22" id="px8-9K-4gM"/>
+                            <constraint firstItem="mA7-iB-EwW" firstAttribute="top" secondItem="sQo-dE-wlw" secondAttribute="top" constant="42" id="ysZ-Xl-5FA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sQo-dE-wlw" firstAttribute="top" secondItem="KYP-uX-dBd" secondAttribute="topMargin" constant="-1" id="7NI-e8-1Im"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sQo-dE-wlw" secondAttribute="trailing" constant="4" id="AvE-3j-i7q"/>
+                    <constraint firstItem="sQo-dE-wlw" firstAttribute="leading" secondItem="KYP-uX-dBd" secondAttribute="leadingMargin" id="Xm8-A6-dGK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sQo-dE-wlw" secondAttribute="bottom" constant="17" id="YEH-WB-5aG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.3921568627" green="0.61176470589999998" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="customView" destination="sQo-dE-wlw" id="96b-a6-1Fl"/>
+                <outlet property="eventImageView" destination="mA7-iB-EwW" id="ocZ-ds-Jbp"/>
+                <outlet property="simpleTextLabel" destination="plI-Pp-xxB" id="U7S-HZ-nzD"/>
+                <outlet property="startSurveyButton" destination="cmE-l2-66f" id="mJB-At-uBD"/>
+                <outlet property="staticLabel" destination="plI-Pp-xxB" id="U9P-zr-t2O"/>
+            </connections>
+            <point key="canvasLocation" x="-679" y="-703"/>
+        </tableViewCell>
+    </objects>
+</document>

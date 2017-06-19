@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCellIdentifier" rowHeight="96" id="8ys-AZ-9Ez" customClass="MessageCellType" customModule="Entrepreneur_Challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ys-AZ-9Ez" id="wre-yw-oYi">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgD-2M-oTU">
+                        <rect key="frame" x="6" y="8" width="279" height="71"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lgD-2M-oTU" firstAttribute="leading" secondItem="wre-yw-oYi" secondAttribute="leadingMargin" constant="-2" id="DGw-tR-mXS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lgD-2M-oTU" secondAttribute="bottom" constant="8" id="Xgo-8L-CV6"/>
+                    <constraint firstItem="lgD-2M-oTU" firstAttribute="top" secondItem="wre-yw-oYi" secondAttribute="topMargin" id="kwR-DD-cmI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lgD-2M-oTU" secondAttribute="trailing" constant="9" id="vZs-Hq-OUv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.3921568627" green="0.61176470589999998" blue="0.73725490199999999" alpha="0.63669023722627738" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="messageNameLabel" destination="lgD-2M-oTU" id="1YA-ig-WSL"/>
+            </connections>
+            <point key="canvasLocation" x="-201" y="-820"/>
+        </tableViewCell>
+    </objects>
+</document>
